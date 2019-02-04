@@ -1,0 +1,110 @@
+/* This is selecting everything in my DOM */
+* {
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* html,body {
+    height: 100%;
+} */
+
+body {
+    background-image: linear-gradient(to bottom,
+    blanchedalmond,
+    white),
+    url(../images/white-waves/white-waves.png);
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    
+
+}
+
+/* Header selectors */
+.primary-header {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding-top: 100px;
+background-color: linear-gradient(to bottom,
+white,
+blanchedalmond);
+/* border: 1px solid black; */
+/* margin-bottom: 20px; */
+}
+    #logo {
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        height: 30%;
+        /* z-index:  1; */
+    }
+
+    .primary-title {
+        font-size: 50px;
+        
+        position: absolute;
+        top: 30%;
+        color: darkgoldenrod;
+        z-index: 2;
+        animation: fadeIn;
+        animation-duration: 5s;
+    }
+
+
+/* Section and table selectors */
+.primary-section, .secondary-section {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: auto;
+    width: 60%;
+    border: 1px solid black;
+    /* margin-bottom: 5%; */
+}
+
+.secondary-section {
+    /* margin-top: 40px; */
+    /* margin-bottom: 40px; */
+}
+    .secondary-heading {
+        padding: 10px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: blanchedalmond;
+        border-bottom: 1px solid black;
+    }
+    table, th, td {
+        /* border: 1px solid black; */
+        /* border-collapse: collapse; */
+        border-spacing: 10px;
+    }
+    th, td {
+        /* padding: 10px; */
+        text-align: left;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    .train-parameters {
+        width: 95%;
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .param-input {
+        /* textarea */
+    }
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
